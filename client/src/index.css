@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  --primary-color: #3e4c44;
+  --accent-color: #eff8ff;
+  --secondary-color: #FF8C32;
+  --hover-color: #EEEEEE;
+  --warning-color: rgb(255, 213, 213);
+  --success-color: rgb(213, 255, 213);
+  --standard-padding: 15px 0px 0px 10px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.cardWidth{
+  width: 20%;
+}
+.nav-header-pic{
+  height: 100px;
+  width: 100px;
+}
+.textPadding{
+  padding: var(--standard-padding);
+}
+.btn1{
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px 0px 10px 0px;
+  border: none;
+  font-size: 20px;
+  transition: all 0.4s linear;
+  font-weight: 800;
+}
+
+.btn1:hover{
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 0 0 4px var(--accent-color);
+}   
+.textButton{
+  margin: 10px 0px;
+  text-decoration: none;
+}
+.textButton:hover{
+  color: green;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1320px){
+  .card1{
+    width: 40%;
+  }
+  .loginCard{
+    width: 40%;
+  }
+}
+@media screen and (max-width:920px){
+  .card1{
+    width: 60%;
+  }
+  .loginCard{
+    width: 60%;
+  }
+}
+@media screen and (max-width:630px){
+  .card1{
+    width: 100%;
+  }
+  .loginCard{
+    width: 100%;
+  }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Quicksand:wght@300&family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+.bg1{
+    background-color: white;
+}
+.pad1{
+    padding: 5% 12%;
+}
+.head1{
+    font-size: 5rem;
+    color: #89CFFD;
+    font-family: 'Quicksand', sans-serif;
+}
+.head2{
+    font-family: 'Titillium Web', sans-serif;
+    color:'#686f7b';
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.sub1{
+    font-size: 1.2rem;
+    color: #6b707a;
+    letter-spacing: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.sub2{
+    font-family: 'Coda', cursive;
+    color:'#686f7b';
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.p1{
+    letter-spacing: 6px;
+    line-height: 30px;
+    font-size: 18px;
+    color: white;
+
+}
+
+.trans{
+    transition: all 0.4s ease-in-out;
+}
+
+.cardsRow{
+    height: 60vh;
+    margin-top: 78px;
+}
+
+@media only screen and (max-width: 992px) {
+    .cardsRow{
+        height: 125vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cardsRow{
+    }
+    .pad1{
+        padding: 5% 5%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .cardsRow{
+        height: 185vh;
+    }
+    .pad1{
+        padding: 5% 15%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .head1{
+        font-size: 3rem;
+    }
+    .head2{
+        font-size: 35px;
+    }
+    .cardsRow{
+        height: 145vh;
+    }
+    .sub2{
+        font-size: 10px;
+    }
+}

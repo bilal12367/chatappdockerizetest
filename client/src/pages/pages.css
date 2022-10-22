@@ -1,0 +1,123 @@
+#body {
+  margin: 10% 0%;
+}
+.st-pad {
+  padding: 1.6% 18%;
+}
+.login-back {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/login-back2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card {
+  transition: all 0.4s linear;
+}
+.card:hover {
+  box-shadow: 0px 4px 10px 2px grey;
+}
+.imgScrim {
+  /* background-image: url(https://wallpaperaccess.com/full/1489353.jpg); */
+  position: relative;
+  height: 100vh;
+}
+.headerTxt {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.errorStyle {
+  border: 1px solid red;
+  background-color: rgb(255, 235, 235);
+  transition: all 0.4s linear;
+}
+.errorStyle:hover {
+  border: 3px solid red;
+}
+.landingButton {
+  padding: 15px 40px;
+  border-radius: 45px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: var(--accent-color);
+}
+.landingButton:hover {
+  background-color: var(--accent-color);
+}
+.sideTxt {
+  color: rgb(187, 187, 187);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.imgScrim::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.aboveScrim {
+  display: flexbox;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  height: 70%;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -10%);
+}
+.imgClass {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+.loginCard {
+  border-radius: 14px;
+  padding: 0px;
+  border-top: 5px solid var(--primary-color);
+}
+hr {
+  color: var(--primary-color);
+  width: 100%;
+}
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--hover-color);
+  transition: all 0.4s linear;
+}
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--hover-color);
+  transition: all 0.4s linear;
+}
+.textButton {
+  margin: 10px 0px;
+  text-decoration: none;
+}
+.textButton:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.card {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 1120px) {
+  .aboveScrim {
+    height: 80%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+  }
+}

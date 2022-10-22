@@ -1,0 +1,271 @@
+:root {
+  --navbar-width: 360px;
+  --navbar-move-anim: all 0.5s ease-in-out;
+  --card-color: rgb(238, 238, 238);
+}
+hr {
+  margin-top: 20px;
+}
+.dashboardCard{
+  padding:0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 15px;
+}
+.bg {
+  transition: var(--navbar-move-anim);
+  background-color: #e9e9fe;
+  position: relative;
+}
+.cardWidth {
+  width: 40%;
+}
+.bg-anim {
+  padding-left: var(--navbar-width);
+}
+
+.btn {
+  margin: 2px;
+}
+.profDetailsDown {
+  margin-top: 40px;
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  overflow-y: scroll;
+  width: var(--navbar-width);
+  left: calc(var(--navbar-width) * -1);
+  top: 0;
+  padding: 10px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: white;
+  transition: var(--navbar-move-anim);
+}
+.tab-pane,.row{
+  --bs-gutter-x: 0px;
+}
+.navbar-anim {
+  left: 0px;
+}
+.mainContent {
+  background-color: #eaeaff;
+  opacity: 1;
+}
+
+.nav-header {
+  width: 100%;
+  border-radius: 15px;
+  font-size: 13px;
+  padding: 20px 25px;
+  background-color: var(--card-color);
+}
+.nav-items {
+  width: 100%;
+  display: block;
+}
+.tab-content {
+  border-left: 1px solid rgb(209, 209, 209);
+  border-bottom: 1px solid rgb(209, 209, 209);
+  border-right: 1px solid rgb(209, 209, 209);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.tab-todo {
+  height: 50vh;
+  background-color: var(--accent-color);
+  overflow-y: scroll;
+  padding: 20px;
+  margin: 10px 0px;
+  border-radius: 14px;
+}
+.card1 {
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px 25px;
+  font-size: 20px;
+  color: var(--primary-color);
+  background-color: var(--card-color);
+  transition: all 0.4s linear;
+}
+.card1:hover {
+  padding-left: 50px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+}
+.card1:active{
+  padding-left: 50px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+}
+.nav-header-pic {
+  height: 80px;
+  width: 80px;
+  box-shadow: 0 0 0 5px white, 0 0 0 10px var(--primary-color), 0 0 0 12px white;
+  object-fit: cover;
+  border-radius: 1000px;
+}
+
+.navbar-toggle {
+  font-size: 25px;
+  color: white;
+  border-radius: 80px;
+  margin: 10px 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.navbar-toggle:hover{
+  background-color: rgb(188, 188, 188,0.4);
+}
+.closeButton {
+  display: none;
+  font-size: 20px;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 14px;
+  border-radius: 10px;
+}
+.profDetailsRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+  font-size: 15px;
+}
+.profDetailsRight p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.nav-header-row {
+  margin-bottom: 10px;
+}
+.profDetailsDown {
+  font-weight: bold;
+}
+hr {
+  margin: 10px 0px;
+}
+.profDetailsDown p {
+  margin-bottom: 0px;
+}
+.navbar-top {
+  padding: 0px !important;
+  margin: 10px 20px;
+  /* background-color: #646e7a; */
+  background: linear-gradient(to right,  #646e7a, rgba(35, 34, 34, 0.6));
+}
+
+@media screen and (max-width: 1500px) {
+  :root {
+    --navbar-width: 300px;
+  }
+  .profDetailsRight {
+    display: none;
+  }
+  .profDetailsDown {
+    display: block;
+    margin-top: 15px;
+  }
+  .nav-header-row {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-height: 760px) {
+  .nav-header {
+    font-size: 12px;
+  }
+  .nav-header-pic {
+    height: 50px;
+    width: 50px;
+  }
+  hr {
+    margin: 10px 0px;
+  }
+  .navbar-btn {
+    font-size: 10px;
+  }
+  :root {
+    --navbar-width: 260px;
+  }
+  .profDetailsDown {
+    margin-top: 20px;
+  }
+  .card1 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .profDetailsDown {
+    margin-top: 15px;
+  }
+  .profDetailsDown p {
+    margin-bottom: 0px;
+  }
+  .card1 {
+    padding: 15px 15px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .closeButton {
+    display: block;
+    font-size: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 14px;
+    border-radius: 10px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .bg-anim {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  :root {
+    --navbar-width: 100%;
+  }
+  .closeButton {
+    display: block;
+    font-size: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 14px;
+    border-radius: 10px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .bg-anim {
+    padding-left: 0px;
+  }
+}
