@@ -41,8 +41,10 @@ const user = localStorage.getItem("user");
 
 const initialState = {
   // url: "https://bilal-todo-mern.herokuapp.com",
-  url:"https://chatapp-mern-bilal.onrender.com",
+  // url:"https://chatapp-mern-bilal.onrender.com",
   // url: "http://localhost:5000",
+  // url: 'http://3.208.18.208:5000',
+  url: 'http://15.206.18.138:5000',
   isLoading: true,
   showAlert: false,
   alertType: "",
@@ -64,9 +66,12 @@ const initialState = {
   emailStyle: { normalStyle: "", errorStyle: "errorStyle", title: "" },
   passwordStyle: { normalStyle: "", errorStyle: "errorStyle", title: "" },
 };
-const url3 = "https://bilal-todo-mern.herokuapp.com";
-const url2 = "https://chatapp-mern-bilal.onrender.com";
-const url = "http://localhost:5000";
+// const url3 = "https://bilal-todo-mern.herokuapp.com";
+// const url4 = "https://chatapp-mern-bilal.onrender.com";
+// const url2 = "http://192.168.0.10:5000"
+// const url = "http://localhost:5000";
+// const url2 = 'http://3.208.18.208:5000'
+const url2 = 'http://15.206.18.138:5000'
 const ENDPOINT = url2;
 // const socket = io.connect(ENDPOINT);
 // socket.on("connect", () => {

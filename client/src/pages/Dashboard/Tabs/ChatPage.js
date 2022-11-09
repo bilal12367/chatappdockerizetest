@@ -8,16 +8,23 @@ import { ChatSection } from './ChatSection'
 import ChatList from './ChatList'
 import UsersList from './UsersList'
 import { io } from 'socket.io-client'
-const ENDPOINT2 = 'http://localhost:5000';
-const ENDPOINT3 = 'https://bilal-todo-mern.herokuapp.com';
-const ENDPOINT = "https://chatapp-mern-bilal.onrender.com";
+// const ENDPOINT2 = 'http://localhost:5000';
+// const ENDPOINT3 = 'https://bilal-todo-mern.herokuapp.com';
+// const ENDPOINT4 = "https://chatapp-mern-bilal.onrender.com";
+// const ENDPOINT = "192.168.0.10:5000"
+// const ENDPOINT = "3.208.18.208:5000"
+const ENDPOINT = "15.206.18.138:5000"
 
 //git test
 export const ChatPage = () => {
   const { isLoading, selectedUser, user } = useAppContext()
-  const url3 = 'https://bilal-todo-mern.herokuapp.com';
-  const url2 = "https://chatapp-mern-bilal.onrender.com";
-  const url = 'http://localhost:5000'
+  // const url2 = 'http://3.208.18.208:5000'
+  // const url2 = 'http://3.208.18.208:5000'
+  const url2 = 'http://15.206.18.138:5000'
+  // const url3 = 'https://bilal-todo-mern.herokuapp.com';
+  // const url4 = "https://chatapp-mern-bilal.onrender.com";
+  // const url2 = "http://192.168.0.10:5000";
+  // const url = 'http://localhost:5000';
   const { data, loading, error, refetch } = useFetch(
     url2 + '/api/v1/getAllUsers',
   )

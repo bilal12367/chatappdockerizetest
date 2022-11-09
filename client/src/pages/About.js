@@ -8,10 +8,6 @@ import FlipCard from '../components/FlipCard'
 // import 'react-tree-graph/dist/style.css'
 
 const About = () => {
-  const { isLoading, user } = useAppContext()
-  if (isLoading) {
-    return <div>Loading</div>
-  } else {
     return (
       <div
         className="bg-light w-100 d-flex flex-column align-items-center card shadow"
@@ -128,7 +124,6 @@ const About = () => {
         </div>
       </div>
     )
-  }
 }
 
 export default About
